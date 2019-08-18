@@ -5,7 +5,7 @@
 [View Live](http://www.thyflow.com) `work in progress`
 
 
-I used React & Prismic to build a full CMS for posts and pages. Mailchimp API for the email sign up. Project is still in development but should be released soon 🚀
+I used React & Mailchimp API for the email sign up. 🚀
 
 - Mailchimp
 - React

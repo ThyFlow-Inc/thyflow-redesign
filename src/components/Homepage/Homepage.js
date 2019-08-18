@@ -9,8 +9,7 @@ import Loading from "../Loading/Loading";
 import Signup from "../Signup/Signup";
 
 import styles from "./homepage.css";
-import isometric from "./isometric.svg";
-import ba from "./ooo.svg";
+import ba from "./barber2018.svg";
 
 export default class Homepage extends React.Component {
   state = {
@@ -74,9 +73,7 @@ export default class Homepage extends React.Component {
                   <Isvg src={ba} />
                 </div>
 
-                <div className={styles.footer}>
-                  <Footer />
-                </div>
+                <div className={styles.footer} />
               </div>
             </div>
           </CSSTransitionGroup>
