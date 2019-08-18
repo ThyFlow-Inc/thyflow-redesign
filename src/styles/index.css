@@ -444,12 +444,14 @@ textarea {
   font-size: 20px;
   background: #FF3BA0;
   outline: none; }
-  @media (min-width: 61.25em) {
-    :global .button {
-      border-radius: 4px; } }
-  :global .button:hover {
-    cursor: pointer;
-    background: #ee007a; }
+
+@media (min-width: 61.25em) {
+  :global .button {
+    border-radius: 4px; } }
+
+:global .button:hover {
+  cursor: pointer;
+  background: #ee007a; }
 
 :global h1,
 :global .h1 {
@@ -466,18 +468,21 @@ textarea {
 :global h3,
 :global h4 {
   font-family: "AkkuratBold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  :global h1 a,
-  :global h2 a,
-  :global h3 a,
-  :global h4 a {
-    color: #2C2C2C !important; }
+
+:global h1 a,
+:global h2 a,
+:global h3 a,
+:global h4 a {
+  color: #2C2C2C !important; }
 
 :global a {
   color: #2C2C2C; }
-  :global a:hover {
-    color: #FF3BA0; }
-  :global a:active, :global a:focus, :global a:visited {
-    color: #2C2C2C; }
+
+:global a:hover {
+  color: #FF3BA0; }
+
+:global a:active, :global a:focus, :global a:visited {
+  color: #2C2C2C; }
 
 :global strong {
   font-family: "AkkuratBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -504,6 +509,7 @@ body {
 
 :global .hide-mobile {
   display: none; }
-  @media (min-width: 46.25em) {
-    :global .hide-mobile {
-      display: block; } }
+
+@media (min-width: 46.25em) {
+  :global .hide-mobile {
+    display: block; } }

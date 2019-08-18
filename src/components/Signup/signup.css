@@ -3,30 +3,35 @@
   width: 100%;
   clear: both;
   lost-utility: clearfix; }
+
+.signup .email {
+  height: 60px;
+  width: 100%;
+  text-indent: 20px;
+  border: solid 1px #dedede; }
+
+@media (min-width: 46.25em) {
   .signup .email {
-    height: 60px;
-    width: 100%;
-    text-indent: 20px;
-    border: solid 1px #dedede; }
-    @media (min-width: 46.25em) {
-      .signup .email {
-        float: left;
-        border-radius: 4px 0px 0px 4px;
-        width: 70%; } }
-    .signup .email:focus {
-      outline: 0;
-      border-color: #FF3BA0; }
+    float: left;
+    border-radius: 4px 0px 0px 4px;
+    width: 70%; } }
+
+.signup .email:focus {
+  outline: 0;
+  border-color: #FF3BA0; }
+
+.signup .button {
+  height: 60px;
+  width: 100%;
+  min-width: 120px; }
+
+@media (min-width: 46.25em) {
   .signup .button {
-    height: 60px;
-    width: 100%;
-    min-width: 120px; }
-    @media (min-width: 46.25em) {
-      .signup .button {
-        position: absolute;
-        right: 0;
-        width: 40%;
-        border-radius: 0px 4px 4px 0px;
-        width: 30%; } }
+    position: absolute;
+    right: 0;
+    width: 40%;
+    border-radius: 0px 4px 4px 0px;
+    width: 30%; } }
 
 .confirmation {
   overflow: hidden;
