@@ -1,13 +1,12 @@
-[![Dependency Status](https://david-dm.org/prismicio/reactjs-starter.svg)](https://david-dm.org/prismicio/reactjs-starter)
 
-# Theinhardt ⚒
-[View Live](http://www.theinhardt.jezfx.com/) `work in progress`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7ee3c780-4ec3-4cd1-a867-67b115ab4715/deploy-status)](https://app.netlify.com/sites/laughing-bhabha-ab2947/deploys)
 
-Theinheart is a weekly UI newsletter I build for my friend [Cassius](https://dribbble.com/CassiusKiani).
+# ThyFlow ⚒
+[View Live](http://www.thyflow.com) `work in progress`
+
 
 I used React & Prismic to build a full CMS for posts and pages. Mailchimp API for the email sign up. Project is still in development but should be released soon 🚀
 
-- [Prismic cms](https://github.com/prismicio/javascript-kit) (headless cms)
 - Mailchimp
 - React
 - React router 4
