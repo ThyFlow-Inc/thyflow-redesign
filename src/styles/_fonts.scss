@@ -1,0 +1,28 @@
+/* Elena Web Basic Regular */
+  @font-face {
+  font-family: 'ElenaWebBasicRegular';
+  src: url('../fonts/ElenaWebBasicRegular.eot');
+  src: url('../fonts/ElenaWebBasicRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ElenaWebBasicRegular.woff2') format('woff2'),
+         url('../fonts/ElenaWebBasicRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
+/* Akkurat */
+  @font-face {
+  font-family: 'Akkurat';
+    src: url('../fonts/Akkurat.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
+  /* Akkurat Bold */
+  @font-face {
+  font-family: 'AkkuratBold';
+   src: url('../fonts/Akkurat-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }

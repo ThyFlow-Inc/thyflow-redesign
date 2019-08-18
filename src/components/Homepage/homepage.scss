@@ -1,0 +1,63 @@
+@import '../../styles/_variables.scss';
+@import '../../../node_modules/sass-mq/_mq.scss';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+
+  @include mq($from: desktop) {
+    height: calc(100vh - 115px); // height of the header
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
+
+.homeContainer {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.text {
+  background: #fff;
+  z-index: 1;
+
+  @include mq($from: desktop) {
+    width: 50%;
+    padding-right: 50px;
+  }
+}
+
+.image {
+  padding-top: 1.5em;
+  display: none;
+
+  @include mq($from: desktop) {
+    display: block;
+    width: 50%;
+  }
+
+  svg {
+    width: 100%;
+  }
+}
+
+.heading {
+  @media screen and(min-width: 1358px) {
+    padding-right: 60px;
+  }
+}
+
+.subheading {
+  margin-bottom: 42px;
+  font-family: $font-regular;
+  color: #444;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+}

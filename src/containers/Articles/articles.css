@@ -1,0 +1,54 @@
+:global .content p {
+  font-size: 18px; }
+
+.hero {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto 100px auto; }
+  .hero:after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #000;
+    display: block; }
+    @media (min-width: 46.25em) {
+      .hero:after {
+        display: none; } }
+  @media (min-width: 46.25em) {
+    .hero {
+      text-align: center;
+      margin-top: 200px; } }
+
+.heading {
+  font-size: responsive 22px 32px;
+  line-height: responsive 32px 46px; }
+
+.subheading {
+  margin-bottom: 35px;
+  font-size: responsive 18px 23px;
+  line-height: responsive 28px 36px;
+  font-family: "Akkurat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  @media (min-width: 46.25em) {
+    .subheading {
+      padding: 0 120px; } }
+
+.signup {
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 46.25em) {
+    .signup {
+      max-width: 500px; } }
+
+.featured {
+  lost-center: 1000px;
+  margin-bottom: 40px; }
+
+.articles {
+  lost-utility: clearfix; }
+
+.loadMore {
+  margin: 50px 0 20px 0;
+  text-align: center; }

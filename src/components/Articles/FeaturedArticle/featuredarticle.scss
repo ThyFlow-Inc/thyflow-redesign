@@ -1,0 +1,152 @@
+@import '../../../styles/_variables.scss';
+@import '../../../styles/_mixins.scss';
+@import '../../../../node_modules/sass-mq/_mq.scss';
+
+.article {
+  margin-bottom: spacingUnit(3);
+  transition: all .1s ease-in-out;
+  lost-utility: clearfix;
+
+  @include mq($from: tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: solid 2px #D9D9D9;
+
+    @include mq($from: tablet) {
+      margin: spacingUnit(2);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    @media screen and(min-width: 1160px) {
+      border-color: $primary-colour;
+    }
+
+    .eyes {
+      opacity: 1;
+    }
+
+    .imageLink {
+      &:after {
+        @media screen and(min-width: 1160px) {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: responsive 18px 20px;
+  line-height: 28px;
+}
+
+.imageLink {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+  display: none;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+
+  @include mq($from: tablet) {
+    display: block;
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  // @include mq($from: desktop) {
+  //   lost-column: 5/12;
+  //   background: none;
+  // }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $primary-colour;
+    transition: opacity .1s ease-in-out;
+    opacity: 0;
+  }
+
+  .imageWrapper {
+    height: 100%;
+    lost-column: 1;
+    lost-align: middle-center;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .eyes {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 110px;
+    background-color: $primary-colour;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 11px;
+    height: 82px;
+    width: 82px;
+    background-size: 78px 59px;
+    background-image: url(./eyes.png) at-2x;
+    transition: opacity .1s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+
+    @media screen and(min-width: 1160px) {
+      display: block;
+    }
+  }
+}
+
+.content {
+
+  @include mq($from: tablet) {
+    width: 370px;
+    padding: 30px;
+  }
+
+  @include mq($from: desktop) {
+    width: 420px;
+    padding: 30px;
+  }
+
+  h3 a,
+  h3:hover a,
+  a,
+  a:hover,
+  p {
+    color: $body-colour !important;
+  }
+}
+
+.excerpt {
+  font-size: 16px;
+  line-height: 28px;
+
+  a {
+    text-decoration: none;
+  }
+}

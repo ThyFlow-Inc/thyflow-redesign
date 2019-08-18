@@ -1,0 +1,80 @@
+@import '../../../node_modules/sass-mq/_mq.scss';
+@import '../../styles/_variables.scss';
+
+:global {
+  .content {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto 100px auto;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #000;
+    display: block;
+
+    @include mq($from: tablet) {
+      display: none;
+    }
+
+  }
+
+  @include mq($from: tablet) {
+    text-align: center;
+    margin-top: 200px;
+  }
+}
+
+.heading {
+  font-size: responsive 22px 32px;
+  line-height: responsive 32px 46px;
+}
+
+.subheading {
+  margin-bottom: 35px;
+  font-size: responsive 18px 23px;
+  line-height: responsive 28px 36px;
+  font-family: $font-regular;
+
+  @include mq($from: tablet) {
+    padding: 0 120px;
+  }
+}
+
+.signup {
+  width: 100%;
+  margin: 0 auto;
+
+  @include mq($from: tablet) {
+    max-width: 500px;
+  }
+}
+
+.featured {
+  lost-center: 1000px;
+  margin-bottom: 40px;
+}
+
+.list {
+
+}
+
+.articles {
+  lost-utility: clearfix;
+}
+
+.loadMore {
+  margin: 50px 0 20px 0;
+  text-align: center;
+}

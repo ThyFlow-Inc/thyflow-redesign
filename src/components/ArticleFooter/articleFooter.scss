@@ -1,0 +1,59 @@
+@import '../../../node_modules/sass-mq/_mq.scss';
+@import '../../styles/_variables.scss';
+
+.content {
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
+
+
+  &:before {
+      content: '';
+      position: absolute;
+      width: 400%;
+      height: 4px;
+      background: #2C2C2C;
+      top: 0;
+      right: calc(50% + 90px);
+      border-radius: 4px;
+
+      @include mq($from: tablet) {
+        right: calc(50% + 320px);
+      }
+  }
+}
+
+/* Footer
+   ========================================================================== */
+
+.footer {
+  margin-top: 90px;
+
+  @include mq($from: tablet) {
+    margin-bottom: 100px;
+  }
+}
+
+.footerHeader {
+  position: relative;
+  font-size: responsive 18px 42px;
+}
+
+.footerCopy {
+  font-size: responsive 16px 24px;
+  line-height: responsive 30px 40px;
+  font-family: $font-regular;
+
+  @include mq($from: tablet) {
+    width: 85%;
+  }
+}
+
+.footerSignup {
+  margin-top: 50px;
+
+  @include mq($from: tablet) {
+    width: 70%;
+  }
+}

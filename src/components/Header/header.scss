@@ -1,0 +1,10 @@
+@import '../../styles/_mixins.scss';
+@import '../../styles/_variables.scss';
+@import '../../../node_modules/sass-mq/_mq.scss';
+
+.header {
+  lost-utility: clearfix;
+  font-size: responsive 20px 26px;
+  padding-top: 30px;
+}
+

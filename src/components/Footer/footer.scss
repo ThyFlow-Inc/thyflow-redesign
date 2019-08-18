@@ -1,0 +1,33 @@
+@import '../../../node_modules/sass-mq/_mq.scss';
+
+.footer {
+  lost-utility: clearfix;
+  clear: both;
+}
+
+.nav {
+  margin-top: 40px;
+
+  @include mq($from: tablet) {
+    margin-top: 20px;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 14px;
+
+    @include mq($from: tablet) {
+      margin-right: 65px;
+    }
+
+    &.current a {
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    border: none;
+  }
+}

@@ -1,0 +1,20 @@
+:global {
+
+  .button {
+    border: none;
+    color: #fff;
+    padding: 3px 25px;
+    font-size: 20px;
+    background: $primary-colour;
+    outline: none;
+
+    @include mq($from: desktop) {
+      border-radius: 4px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: darken($primary-colour, 15%);
+    }
+  }
+}

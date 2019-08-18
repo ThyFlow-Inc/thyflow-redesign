@@ -1,0 +1,39 @@
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+.hero {
+  max-width: 770px;
+  margin: 30px auto;
+  text-align: center; }
+  @media (min-width: 46.25em) {
+    .hero {
+      margin-top: 200px; } }
+  .hero .subheading {
+    margin: 25px 0; }
+
+.header {
+  margin-bottom: 20px;
+  font-size: responsive 20px 42px;
+  line-height: responsive 30px 58px; }
+
+.image {
+  margin-bottom: 20px;
+  width: 100%; }
+
+.post :global h1, .post :global h2, .post :global h3, .post :global h4, .post :global h5, .post :global h6 {
+  margin: 20px 0 10px 0;
+  font-size: responsive 20px 42px;
+  line-height: 1.380952381; }
+
+.post :global p, .post :global a, .post :global span {
+  font-family: "ElenaWebBasicRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2A2A2A;
+  font-size: responsive 16px 24px;
+  line-height: responsive 34px 44px; }
+
+.post :global img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 40px; }

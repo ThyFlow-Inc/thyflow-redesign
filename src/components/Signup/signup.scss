@@ -1,0 +1,69 @@
+@import '../../../node_modules/sass-mq/_mq.scss';
+@import '../../styles/_variables.scss';
+
+.signup {
+  position: relative;
+  width: 100%;
+  clear: both;
+  lost-utility: clearfix;
+
+  .email {
+    height: 60px;
+    width: 100%;
+    text-indent: 20px;
+    border: solid 1px #dedede;
+
+    @include mq($from: tablet) {
+      float: left;
+      border-radius: 4px 0px 0px 4px;
+      width: 70%;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: $primary-colour;
+    }
+  }
+
+  .button {
+    height: 60px;
+    width: 100%;
+    min-width: 120px;
+
+    @include mq($from: tablet) {
+      position: absolute;
+      right: 0;
+      width: 40%;
+      border-radius: 0px 4px 4px 0px;
+      width: 30%;
+    }
+  }
+}
+
+.confirmation {
+  overflow: hidden;
+  float: left;
+  height: 80px;
+  clear: both;
+  margin-top: 0px;
+}
+
+.confirmationMessage {
+  margin-top: 10px;
+}
+
+:global {
+  .message {}
+
+  .message-enter {
+    opacity: 0.01;
+    transform: translate3d(0px, -30px, 0px);
+  }
+
+  .message-enter.message-enter-active {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: opacity 500ms ease-in, transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
